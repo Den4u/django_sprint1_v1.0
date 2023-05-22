@@ -44,6 +44,10 @@ posts = [
     },
 ]
 
+post_id_detail = {}
+for post in posts:
+    post_id_detail[post['id']] = post
+
 
 def index(request):
     template = 'blog/index.html'
@@ -53,8 +57,8 @@ def index(request):
 
 def post_detail(request, post_id):
     try:
-        context = {'post': posts[post_id]}
-    except IndexError:
+        context = {'post': post_id_detail[post_id]}
+    except KeyError:
         raise Http404("Такого поста не существует")
     template = 'blog/detail.html'
     return render(request, template, context)
