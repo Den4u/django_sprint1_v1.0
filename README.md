@@ -37,4 +37,4 @@ pip install -r requirements.txt
 python manage.py runserver
 ```
 
-### Автор: https://github.com/Den4u
+Автор: https://github.com/Den4u
