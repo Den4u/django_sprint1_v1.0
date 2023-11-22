@@ -31,10 +31,9 @@ python -m pip install --upgrade pip
 ```
 pip install -r requirements.txt
 ```
-```
 Запустить проект:
 ```
 python manage.py runserver
 ```
 
-Автор: https://github.com/Den4u
+### Автор: https://github.com/Den4u
